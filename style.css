@@ -1,0 +1,100 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Center the board */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Grid styling */
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  border: 4px solid #333;
+}
+
+/* Individual cell/box styling */
+.box {
+  width: 100px;
+  height: 100px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.box:hover {
+  background-color: #eaeaea;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1e272e;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #2f3640;
+  transform: scale(1.05);
+}
+
+/* Click (active) effect */
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Button container to align Reset and New Game side by side */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.hide {
+  display: none;
+}
+
+#msg{
+  color: rgb(14, 149, 14);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
